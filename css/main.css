@@ -1,0 +1,17 @@
+body{
+    background-color: #f7edc5;
+}
+h1.a {
+    font-family: "Lemon", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+button.login-button{
+    color:black;
+    background-color: white;
+    border: 100px;
+    width: 200px;
+    display:block;
+    align-content: center;
+}
