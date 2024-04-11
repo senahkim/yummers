@@ -1,17 +1,50 @@
-body{
+body {
     background-color: #f7edc5;
-}
-h1.a {
-    font-family: "Lemon", sans-serif;
-    text-align: center;
-    margin-top: 100px;
+    display: flex; /* Flexbox to center children */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Minimum height to take full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
-button.login-button{
-    color:black;
-    background-color: white;
-    border: 100px;
-    width: 200px;
-    display:block;
-    align-content: center;
+h1.a {
+    font-size:50px;
+    font-family: "Lemon", sans-serif;
+    position: absolute;
+    text-align: center;
+    margin-bottom:150px; /* Position it at the top with some space */
+    width: 100%; /* Ensure it spans the width of the viewport */
+}
+
+main {
+    margin-bottom: 50px;
+    width: 100%; /* Take full width to center form */
+    max-width: 250px; /* Good width for a form */
+    padding: 20px; /* Padding around the form */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+form#login {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center the items horizontally */
+}
+
+.username {
+    width: 100%; /* Full width of the form */
+    margin-bottom: 20px; /* Space below each input */
+}
+
+.username label,
+.username input {
+    width: 100%; /* Full width to match the parent */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.username input {
+    padding: 10px; /* Padding inside the input */
+    margin-top: 8px; /* Space above the input field */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners for the input */
 }
