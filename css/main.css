@@ -31,25 +31,33 @@ form#login {
   align-items: center; /* Center the items horizontally */
 }
 
-.username,
+.username {
+  width: 100%; /* Full width of the form */
+  margin-bottom: 20px;
+}
+
 .password {
   width: 100%; /* Full width of the form */
   margin-bottom: 20px; /* Space below each input */
 }
 
-.username label,
-.username,
-.password input {
+
+.username input {
+  padding: 10px; /* Padding inside the input */
+  margin-top: 8px; /* Space above the input field */
+  border: 1px solid #ccc; /* Border for the input */
+  border-radius: 4px; 
   width: 100%; /* Full width to match the parent */
-  box-sizing: border-box; /* Include padding and border in the width */
+  box-sizing:border-box;
 }
 
-.username,
 .password input {
   padding: 10px; /* Padding inside the input */
   margin-top: 8px; /* Space above the input field */
   border: 1px solid #ccc; /* Border for the input */
-  border-radius: 4px; /* Rounded corners for the input */
+  border-radius: 4px;
+  width: 100%; /* Full width to match the parent */
+  box-sizing: border-box;/* Rounded corners for the input */
 }
 
 button {
