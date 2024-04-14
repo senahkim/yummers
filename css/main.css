@@ -1,78 +1,66 @@
 body {
-  background-color: #f7edc5;
-  display: flex; /* Flexbox to center children */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  min-height: 100vh; /* Minimum height to take full viewport height */
-  margin: 0; /* Remove default margin */
+    background-color: #f7edc5;
+    display: flex; /* Flexbox to center children */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Minimum height to take full viewport height */
+    margin: 0; /* Remove default margin */
 }
 
 h1.a {
-  font-size: 50px;
-  font-family: "Lemon", sans-serif;
-  position: absolute;
-  text-align: center;
-  margin-bottom: 150px; /* Position it at the top with some space */
-  width: 100%; /* Ensure it spans the width of the viewport */
+    font-size:50px;
+    font-family: "Lemon", sans-serif;
+    position: absolute;
+    text-align: center;
+    margin-bottom:150px; /* Position it at the top with some space */
+    width: 100%; /* Ensure it spans the width of the viewport */
 }
 
 main {
-  margin-bottom: 50px;
-  width: 100%; /* Take full width to center form */
-  max-width: 250px; /* Good width for a form */
-  padding: 20px; /* Padding around the form */
-  box-sizing: border-box; /* Include padding in width */
+    margin-bottom: 50px;
+    width: 100%; /* Take full width to center form */
+    max-width: 250px; /* Good width for a form */
+    padding: 20px; /* Padding around the form */
+    box-sizing: border-box; /* Include padding in width */
 }
 
 form#login {
-  margin-top: 250px;
-  display: flex;
-  flex-direction: column; /* Stack the children vertically */
-  align-items: center; /* Center the items horizontally */
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center the items horizontally */
 }
 
 .username {
-  width: 100%; /* Full width of the form */
-  margin-bottom: 20px;
+    width: 100%; /* Full width of the form */
+    margin-bottom: 20px; /* Space below each input */
 }
 
-.password {
-  width: 100%; /* Full width of the form */
-  margin-bottom: 20px; /* Space below each input */
+.username label,
+.username input {
+    width: 100%; /* Full width to match the parent */
+    box-sizing: border-box; /* Include padding and border in the width */
 }
-
 
 .username input {
-  padding: 10px; /* Padding inside the input */
-  margin-top: 8px; /* Space above the input field */
-  border: 1px solid #ccc; /* Border for the input */
-  border-radius: 4px; 
-  width: 100%; /* Full width to match the parent */
-  box-sizing:border-box;
+    padding: 10px; /* Padding inside the input */
+    margin-top: 8px; /* Space above the input field */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners for the input */
 }
 
-.password input {
-  padding: 10px; /* Padding inside the input */
-  margin-top: 8px; /* Space above the input field */
-  border: 1px solid #ccc; /* Border for the input */
-  border-radius: 4px;
-  width: 100%; /* Full width to match the parent */
-  box-sizing: border-box;/* Rounded corners for the input */
+button{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:bold;
+    align-items: center;
+    margin-left: 72px;
+    margin-right: 72px;
+    padding:6px 20px; /*button padding, need further adjustments*/
+    border-radius: 14px; /*login button radius, to be adjusted*/
+    border-style:none; /*no border*/
 }
 
-button {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: bold;
-  align-items: center;
-  margin-left: 72px;
-  margin-right: 72px;
-  padding: 6px 20px; /*button padding, need further adjustments*/
-  border-radius: 14px; /*login button radius, to be adjusted*/
-  border-style: none; /*no border*/
-}
-
-button:hover {
-  background-color: rgb(255, 204, 0);
-  color: white;
+button:hover{
+    background-color: rgb(255, 204, 0);
+    color:white;
 }
