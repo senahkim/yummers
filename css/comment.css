@@ -1,0 +1,103 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  .app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700;
+    padding: 10px;
+  }
+  
+  .app-title {
+    color: white;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  /* Content styles */
+  .content {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .post-image {
+    margin: 20px 0;
+  }
+  
+  .post-text p {
+    font-weight: bold;
+  }
+  
+  .location {
+    color: grey;
+    font-size: 0.8rem;
+  }
+  
+  .reactions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  /* Comments styles */
+  .comments {
+    margin: 20px;
+  }
+  
+  .comment {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .comment-content {
+    text-align: left;
+  }
+  
+  .commenter-name {
+    font-weight: bold;
+  }
+  
+  .comment-time {
+    font-size: 0.8rem;
+    color: grey;
+  }
+  
+  /* Footer styles */
+  .comment-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+  }
+  
+  /* Add your media queries for responsiveness */
+  @media (max-width: 600px) {
+    /* Your responsive styles here */
+  }
+  
