@@ -60,7 +60,6 @@ header {
 /* Profile Image */
 .profile-image {
     position: absolute; /* Absolute position to float over the gallery */
-    top: -60px; /* Pull up half of the image size to overlap */
     left: 50%; /* Center align */
     transform: translateX(-50%); /* Center the div exactly */
     width: 120px; /* Adjust the width as needed */
@@ -74,7 +73,7 @@ header {
 
 .profile-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 50%;
 }
 
@@ -87,7 +86,7 @@ header {
 .profile-user-name {
     font-size: 1.2rem;
     color: #000;
-    margin: 0;
+    margin: top 100px;
 }
 
 .profile-bio {
