@@ -20,7 +20,6 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent; /* The header seems to have a transparent background */
     padding: 10px 20px;
     position: fixed;
     width: 100%;
