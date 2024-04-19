@@ -1,0 +1,126 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body, html {
+    height: 100%;
+    font-family: 'Lemon', sans-serif; /* Adjusting the font to match the main page */
+    background-color: #FFF7E6; /* Adjusting the background color to match the image */
+}
+  
+/* Header styles */
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* The header seems to have a transparent background */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+  
+/* Use the .smalllogo class from main.css for consistent styling */
+  
+/* Content styles */
+.content {
+    text-align: left; /* Aligning content to the left */
+    padding: 60px 20px 0 20px; /* Adjusting padding to accommodate fixed header */
+    max-width: 500px; /* Limit the width to match the image */
+    margin: 0 auto; /* Center the content on the page */
+}
+  
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Adding space below the profile section */
+}
+
+.profile-pic {
+    width: 40px; /* Adjusting the size of the profile picture */
+    height: 40px;
+    border-radius: 50%; /* Making the profile picture circular */
+    object-fit: cover; /* Ensuring the image covers the area without distortion */
+}
+  
+.username {
+    font-weight: bold;
+    font-size: 1rem;
+}
+  
+.post-image {
+    margin-bottom: 20px;
+}
+
+.food-pic {
+    width: 100%; /* Making the food picture responsive */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+  
+.post-text p {
+    font-weight: bold;
+    font-size: 1.2rem; /* Larger font size for the post text */
+}
+
+.location {
+    display: block; /* Ensuring the location is on a new line */
+    color: grey;
+    font-size: 0.8rem;
+    margin-top: 5px; /* Space above the location */
+}
+  
+.reactions {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px; /* Adding space below the reactions */
+}
+  
+/* Comments styles */
+.comments {
+    margin: 20px 0; /* Adding top and bottom margins to comments */
+}
+  
+.comment {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.commenter-pic {
+    width: 30px; /* Adjusting the size of the commenter picture */
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+  
+.comment-content {
+    text-align: left;
+}
+  
+.commenter-name {
+    font-weight: bold;
+    font-size: 0.9rem; /* Adjusting the font size for commenter name */
+}
+  
+.comment-time {
+    font-size: 0.7rem; /* Smaller font size for the comment time */
+    color: grey;
+    display: block; /* Making the time appear below the name */
+}
+  
+/* Footer styles */
+.comment-input input {
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    padding: 10px;
+    border: 1px solid #ccc; /* Adding border to match the image */
+    border-radius: 20px; /* Rounded corners for input */
+    margin: 10px;
+    font-family: 'Lemon', sans-serif; /* Font consistency */
+}
+  
+/* Add additional styles for icons and other elements as needed */
