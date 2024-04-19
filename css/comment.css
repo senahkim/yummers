@@ -12,7 +12,7 @@
 body, html {
     height: 100%;
     font-family: 'Roboto', sans-serif; /* Adjusting the font to match the main page */
-    background-color: #FFF7E6; /* Adjusting the background color to match the image */
+    background-color: #fffacd;
 }
   
 /* Header styles */
@@ -31,10 +31,12 @@ body, html {
   
 /* Content styles */
 .content {
-    text-align: left; /* Aligning content to the left */
-    padding: 60px 20px 0 20px; /* Adjusting padding to accommodate fixed header */
-    max-width: 500px; /* Limit the width to match the image */
-    margin: 0 auto; /* Center the content on the page */
+    border-radius: 16px;
+    background-color: #fffdee;
+    display: flex;
+    margin-top: 21px;
+    flex-direction: column;
+    padding: 17px 24px;
 }
   
 .profile {
