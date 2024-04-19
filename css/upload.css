@@ -31,6 +31,25 @@ header {
 
 /* IMAGE */
 
+.uploadimage {
+  border-radius: 16px;
+  background-color: #fffdee;
+  display: flex;
+  margin-top: 21px;
+  flex-direction: column;
+  padding: 17px 24px;
+  width: 90%;
+  margin-bottom: 90px;
+
+  img {
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    align-items: center;
+    margin-left: 10px;
+  }
+}
+
 .gear-icon {
   display: inline-block;
   position: fixed;
@@ -40,7 +59,7 @@ header {
   margin-left: 40%;
 }
 
-.two-users {
+.user-icon {
   display: inline-block;
   position: fixed;
   padding-bottom: 75px;
