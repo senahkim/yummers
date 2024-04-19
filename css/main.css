@@ -1,19 +1,18 @@
 body {
-  background-color: #f7edc5;
+  background-color: #fff6a3;
   display: flex; /* Flexbox to center children */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   min-height: 100vh; /* Minimum height to take full viewport height */
   margin: 0; /* Remove default margin */
-
-  .boxoutline {
-    margin: 0;
-    width: 200px;
-    height: 200px;
-    background-color: yellow;
-  }
 }
 
+.boxoutline {
+  background-color: #fff4c4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 /* YUMMERS LOGO */
 
 h1.a {
@@ -25,25 +24,76 @@ h1.a {
   width: 100%; /* Ensure it spans the width of the viewport */
 }
 
-.smallogo {
-  font-size: 20px;
-  font-family: "Lemon", sans-serif;
-  text-align: center;
-  position: sticky;
-  margin-bottom: 750px;
+header {
+  height: 60px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  color: white;
+  cursor: default;
+  text-align: center;
+  padding-bottom: 45px;
+  font-family: "Cinzel";
+  -webkit-text-stroke-width: 0.01px;
+
+  .smallogo {
+    font-size: 20px;
+    font-family: "Lemon", sans-serif;
+    color: black;
+  }
 }
 
 /* IMAGE */
 
-.boxoutline {
-  background-color: yellow;
-  width: 60px;
-  height: 80px;
+.gear-icon {
+  display: inline-block;
+  position: fixed;
+  padding-bottom: 75px;
+  width: 50px;
+  height: 50px;
+  margin-left: 40%;
 }
-img {
-  display: block;
-  margin: 0 auto;
+
+.two-users {
+  display: inline-block;
+  position: fixed;
+  padding-bottom: 75px;
+  width: 50px;
+  height: 50px;
+  margin-right: 90%;
+}
+
+/*.boxoutline {
+  margin: 0;
+  width: 200px;
+  height: 500px;
+  background-color: #fffdef;
+  border: solid 50px black;
+  justify-content: center;
+} */
+
+.uploadimage {
+  width: 300px;
+  height: 400px;
+  background-color: #fff4c4;
+}
+
+.uploadimage img {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+/* CAPTIONS */
+
+.uploadcaption {
+  font-family: "Verdana";
+  font-size: 20px;
 }
 
 main {
