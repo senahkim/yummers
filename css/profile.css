@@ -1,139 +1,124 @@
 /* Base Styles */
 :root {
-    --bg-color: #FFFACD; 
-    --text-color: #262626; 
-    --icon-color: #000000; 
+    --bg-color: #FEE5AD; /* Same as image's background */
+    --text-color: #262626; /* Same as text color in the image */
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Lemon', sans-serif; /* As specified */
     background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
-    padding: 0;
+    padding-top: 80px; /* For fixed header */
 }
 
-/* Top Navigation Bar */
+/* Header and Top Navigation Styles */
+header {
+    background-color: var(--bg-color);
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
 .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: var(--bg-color); /* Matching background */
-    position: fixed; /* Make it stay at the top */
+    padding: 12px 16px; /* To match image padding */
+    font-size: 1.5rem; /* Icon size to match image */
+    border-bottom: 1px solid #c3c3c3; /* Bottom border */
+}
+
+.top-nav h1 {
+    font-family: 'Lemon', sans-serif;
+    font-size: 2rem; /* Title size */
+    color: #000; /* Title color */
+}
+
+/* Profile Section - Assuming .profile is the parent container */
+.container {
+    max-width: 430px; /* Set the max-width to match the second image width */
+    margin: auto;
+    background: #FFFFFF; /* Set the background to white */
+    border-radius: 20px; /* Rounded corners for the container */
+    overflow: hidden; /* Ensures the content does not spill out of the container */
+    position: relative; /* Needed for absolute positioning of the profile image */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* This will center the child elements vertically */
+    position: relative; /* This will help position the child image absolutely within this container */
+    margin-top: -60px; /* Pull the profile section up to overlap with the header */
     width: 100%; /* Full width */
-    top: 0;
-    z-index: 10; /* Above other content */
 }
 
-.top-nav div {
-    font-size: 2rem; /* Increase size of icons */
-}
-
-.fa-user-group, .fa-gear {
-    color: var(--icon-color); /* Icon color */
-}
-
-/* Adjusting the Profile Image */
+/* Profile Image */
 .profile-image {
-    margin: 4rem auto 1rem; /* Center the profile image and give some space from the nav */
-    width: 7.7rem; /* Adjust the profile picture size */
-    height: 7.7rem;
-    border-radius: 50%;
-    overflow: hidden; /* Ensure the image is round */
+    position: absolute; /* Absolute position to float over the gallery */
+    left: 50%; /* Center align */
+    transform: translateX(-50%); /* Center the div exactly */
+    width: 120px; /* Adjust the width as needed */
+    height: 120px; /* Adjust the height to maintain aspect ratio */
+    background: #FFFFFF; /* White background to match the second image */
+    border: 3px solid #FFFFFF; /* White border to match the second image */
+    border-radius: 50%; /* Circle it */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
 }
+
 
 .profile-image img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    border-radius: 50%;
 }
 
 /* Profile User Settings */
 .profile-user-settings {
-    text-align: center;
-    margin: 1rem 0;
+    text-align: center; /* Center align the username and bio */
+    padding-top: 80px; /* Add padding to push the content down under the profile image */
 }
 
 .profile-user-name {
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
-.profile-user-name strong {
-    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000;
+    margin: top 100px;
 }
 
 .profile-bio {
-    text-align: center;
-    margin-bottom: 2rem;
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 1rem; /* Adjust spacing as per design requirements */
 }
-
-.profile-real-name {
-    font-weight: normal;
-}
-
-/* Gallery Grid */
-.gallery
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    grid-gap: 1rem;
-    padding-top: 12rem; /* Space for the fixed header */
-    padding-bottom: 3rem; /* Space at the bottom */
-    padding-left: 1rem; /* Padding on the sides */
-    padding-right: 1rem; /* Padding on the sides /
-    list-style: none; / Remove default list styling */
-    }
-    
-.gallery-item {
-position: relative;
-overflow: hidden; /* Ensures the images fit to the item */
-background-color: #fff; /* Background color for images */
-border-radius: 1rem; /* Rounded corners for the images */
-}
-    
-.gallery-item img {
-width: 100%; /* Images take full width */
-height: auto;
-vertical-align: middle; /* Align images properly */
-}
-
-/* Adjusting the Container */
-.container {
-padding: 0;
-margin-top: 5rem; /* Space for the header */
-max-width: 100%;
-}
-    
-/* Loader (if it's used) */
-.loader {
-margin-top: 2rem; /* Added some space above the loader */
-}
-    
-/* Adjusting for smaller screens */
-@media screen and (max-width: 40rem) {
+/* Gallery Styles */
 .gallery {
-grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create three columns */
+    grid-gap: 8px; /* This sets the gap between the images */
+    padding: 8px; /* This sets the padding around the grid */
+    margin-top: 140px; /* Additional top margin to accommodate profile image overlapping */
+    margin-bottom: 50px; /* Adjust if needed to match the design */
 }
 
-    
-/* Additional Styling */
-button {
-display: none; /* Hide buttons as they are not visible in the layout */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px; /* Adjust if needed to match the design */
+    aspect-ratio: 1 / 1; /* Makes sure each item is a square */
 }
-    
-/* Hiding unnecessary items */
-.profile-edit-btn, .profile-settings-btn, .profile-stats, .gallery-item-info {
-display: none;
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will cover the area, cropping the image if necessary */
+    display: block;
 }
-    
-/* Profile Bio and Stats inline */
-.profile-bio, .profile-stats 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
+/* Adjust padding-top in the main tag if necessary to avoid overlapping the header */
+main {
+    padding-top: 100px; /* This value can be adjusted */
 }
