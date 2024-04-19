@@ -4,10 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
+.app-header {
+    font-family: Lemon, sans-serif;
+}
+
 body, html {
     height: 100%;
-    font-family: 'Lemon', sans-serif; /* Adjusting the font to match the main page */
+    font-family: 'Roboto', sans-serif; /* Adjusting the font to match the main page */
     background-color: #FFF7E6; /* Adjusting the background color to match the image */
 }
   
