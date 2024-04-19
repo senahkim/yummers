@@ -89,6 +89,13 @@ header {
   border-radius: 10px;
 }
 
+/* CAPTIONS */
+
+.uploadcaption {
+  font-family: "Verdana";
+  font-size: 20px;
+}
+
 main {
   margin-bottom: 50px;
   width: 100%; /* Take full width to center form */
