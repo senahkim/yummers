@@ -1,0 +1,183 @@
+.div {
+    background-color: #fffacd;
+    display: flex;
+    max-width: 480px;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 67px 16px;
+  }
+  .div-2 {
+    align-self: stretch;
+    display: flex;
+    gap: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .img {
+    aspect-ratio: 1.64;
+    object-fit: auto;
+    object-position: center;
+    width: 77px;
+  }
+  .div-3 {
+    font-family: Lemon, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .img-2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 44px;
+    align-self: start;
+  }
+  .img-3 {
+    aspect-ratio: 1.64;
+    object-fit: auto;
+    object-position: center;
+    width: 36px;
+    stroke-width: 3px;
+    stroke: #000;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 3px;
+    margin: 42px 0 0 12px;
+  }
+  .div-4 {
+    margin: 53px 0 0 13px;
+    font: 24px Roboto, sans-serif;
+  }
+  .div-5 {
+    border-radius: 9px;
+    border-color: rgba(198, 198, 198, 1);
+    border-style: solid;
+    border-width: 2px;
+    align-self: center;
+    margin-top: 42px;
+    width: 308px;
+    max-width: 100%;
+    align-items: start;
+    color: #929292;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 9px 22px;
+    font: 400 12px Roboto, sans-serif;
+  }
+  .div-6 {
+    display: flex;
+    gap: 14px;
+    white-space: nowrap;
+    margin: 45px 0 0 30px;
+  }
+  .img-4 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+    border-radius: 50%;
+  }
+  .div-7 {
+    font-family: Roboto, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .div-8 {
+    display: flex;
+    gap: 14px;
+    white-space: nowrap;
+    margin: 33px 0 0 30px;
+  }
+  .img-5 {
+    aspect-ratio: 0.98;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+    border-radius: 50%;
+  }
+  .div-9 {
+    font-family: Roboto, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .div-10 {
+    display: flex;
+    gap: 14px;
+    white-space: nowrap;
+    margin: 33px 0 0 30px;
+  }
+  .img-6 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+    border-radius: 50%;
+  }
+  .div-11 {
+    font-family: Roboto, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .div-12 {
+    display: flex;
+    gap: 14px;
+    white-space: nowrap;
+    margin: 33px 0 0 30px;
+  }
+  .img-7 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+    border-radius: 50%;
+  }
+  .div-13 {
+    font-family: Roboto, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .div-14 {
+    display: flex;
+    gap: 14px;
+    white-space: nowrap;
+    margin: 33px 0 0 30px;
+  }
+  .img-8 {
+    aspect-ratio: 0.98;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+    border-radius: 50%;
+  }
+  .div-15 {
+    font-family: Roboto, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+  }
+  .div-16 {
+    display: flex;
+    gap: 14px;
+    white-space: nowrap;
+    margin: 33px 0 0 30px;
+  }
+  .img-9 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 49px;
+    border-radius: 50%;
+  }
+  .div-17 {
+    font-family: Roboto, sans-serif;
+    margin: auto 0;
+  }
