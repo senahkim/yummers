@@ -1,58 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Comment Page</title>
-<link rel="stylesheet" href="css/comment.css">
-<link
-href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
-rel="stylesheet"/>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #fffbce;
+        }
+        header{
+            display: flex;
+            height: 150px;
+        }
+        .lf{
+            width: 50px;
+            text-align: center;
+        }
+        .lf img{
+            width: 50px;
+            margin-top:88px;
+        }
+        .tl{
+            text-align: center;
+            line-height: 170px;
+            flex: 1;
+            font-size: 30px;
+        }
+        .rg{
+            width: 50px;
+            text-align: center;
+        }
+        .rg img{
+            width: 20px;
+            margin-top: 95px;
+        }
+        .con{
+            width: 90%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .con_tl{
+            width: 100%;
+            display: flex;
+        }
+        .iconReturn img{
+            width: 40px;
+            margin-top: 9px;
+        }
+        .icontx{
+            margin: 0 10px 0 20px;
+        }
+        .icontx img{
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+        }
+        .iconName{
+            line-height: 44px;
+        }
+        .con_cen{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .con_cen_img{
+            margin:30px 0 10px 0;
+        }
+        .con_cen_img img{
+            width:150px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        .con_cen_pro{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .con_cen_nm{
+            font-size: 12px;
+            color: #a3a2a2;
+        }
+        .con_ft{
+            display: flex;
+            height: 40px;
+        }
+        .con_ft div:nth-child(1){
+            line-height: 40px;
+        }
+        .con_ft div:nth-child(2) img{
+            width: 30px;
+            height: 30px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .msg{
+            display: flex;
+            height: 50px;
+            border-top: 1px #a3a2a2 solid;
+            margin-top: 20px;
+            padding-top: 30px;
+        }
+        .msg_img img{
+            width: 40px;
+            height: 40px;
+            margin-top: 5px;
+            border-radius: 9999px;
+        }
+        .msg_tx{
+            flex: 1;
+            font-size: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 10px;
+        }
+        .msg_tx_name{
+            display: flex;
+        }
+        .msg_tx_name div:nth-child(1){
+            font-weight: bold;
+        }
+        .msg_tx_name div:nth-child(2){
+            margin-left: 5px;
+            color: #a3a2a2;
+        }
+        .ipt{
+            margin-top: 80px;
+            width: 100%;
+        }
+        .ipt input{
+            width: 100%;
+            height: 30px;
+            border-color:#a3a2a2 ;
+            outline: none;
+            border-radius: 5px;
+            border-top-color: #a3a2a2;
+            border-left-color: #a3a2a2;
+        }
+    </style>
 </head>
-
 <body>
-  <header class="app-header">
-    <div class="icon left"></div>
-    <h1 class="smalllogo">Yummers</h1>
-    <div class="icon right"></div>
-  </header>
-  
-  <section class="content">
-    <nav class="back-arrow">←</nav>
-    <div class="profile">
-      <img src="IMG/photo/senah.jpg" alt="Profile picture" class="profile-pic">
-      <span class="username">senahkim</span>
+    <header>
+        <div class="lf">
+            <img src="img/icon/icon-2users.png" alt="">
+        </div>
+        <div class="tl">
+            yummers
+        </div>
+        <div class="rg">
+            <img src="img/icon/747376.png" alt="">
+        </div>
+    </header>
+    <div class="con">
+        <div class="con_tl">
+            <div class="iconReturn">
+                <img src="img/icon/icon-arrow.png" alt="">
+            </div>
+            <div class="icontx">
+                <img src="img/photo/senah.jpg" alt="">
+            </div>
+            <div class="iconName">
+                senahkim
+            </div>
+        </div>
+        <div class="con_cen">
+            <div class="con_cen_img">
+                <img src="img/food/food5.jpg" alt="">
+            </div>
+            <div class="con_cen_pro">
+                This was so yummers!
+            </div>
+            <div class="con_cen_nm">
+                Broad Streel Oyster Co,CA
+            </div>
+        </div>
+        <div class="con_ft">
+            <div>
+                6
+            </div>
+            <div>
+                <img src="img/icon/yummer-logo.png" alt="">
+            </div>
+        </div>
+        <div class="msg">
+            <div class="msg_img">
+                <img src="img/photo/profile-gracee.lee.png" alt="">
+            </div>
+            <div class="msg_tx">
+                <div class="msg_tx_name">
+                    <div>gracee.lee</div>
+                    <div>2:04 PM</div>
+                </div>
+                <div>
+                    OMG that looks so good
+                </div>
+            </div>
+            
+        </div>
+        <div class="ipt">
+            <input type="text" placeholder="Add Comment">
+        </div>
     </div>
-    <div class="post-image">
-      <img src="Img/food/food3.jpg" alt="Food picture" class="food-pic">
-    </div>
-    <div class="post-text">
-      <p>This was so yummers!</p> <!-- This text should match the image exactly. If it's a typo in the image, keep it. -->
-      <span class="location">Broad Street Oyster Co., CA</span>
-    </div>
-    <div class="reactions">
-      <span class="likes">6</span>
-      <span class="like-icon">😊</span>
-    </div>
-  </section>
-  
-  <hr>
-
-  <section class="comments">
-    <div class="comment">
-      <img src="img/photo/profile-gracee.lee.png" alt="Commenter picture" class="commenter-pic">
-      <div class="comment-content">
-        <span class="commenter-name">gracee.lee</span>
-        <span class="comment-time">2:04 PM</span>
-        <p class="comment-text">OMG that looks so good</p>
-      </div>
-    </div>
-    <!-- Additional comments would go here -->
-  </section>
-
-  <footer class="comment-input">
-    <input type="text" placeholder="Add Comment">
-  </footer>
+    <!-- <div>
+        <img src="1.jpg" alt="">
+    </div> -->
 </body>
 </html>
