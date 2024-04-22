@@ -19,6 +19,7 @@
     object-position: center;
     width: 41px;
   }
+
   .div-3 {
     font-family: Lemon, sans-serif;
     align-self: stretch;
@@ -27,6 +28,7 @@
     margin: auto 0;
     text-align:center;
   }
+  
   .img-2 {
     object-fit: auto;
     object-position: center;
