@@ -1,125 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/profile.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet" />
-    <!-- Make sure to include FontAwesome's CSS if you're using their icons -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+      rel="stylesheet"/>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #fffbce;
+            font-family: "Verdana";
+        }
+        header{
+            display: flex;
+            height: 150px;
+        }
+        .lf{
+            width: 50px;
+            text-align: center;
+        }
+        .lf img{
+            width: 50px;
+            margin-top:88px;
+        }
+        .tl{
+            text-align: center;
+            line-height: 170px;
+            flex: 1;
+            font-size: 30px;
+            font-family: "Lemon", sans-serif;
+        }
+        .rg{
+            width: 50px;
+            height: 50px;
+            border-radius: 999px;
+            text-align: center;
+        }
+        .rg img{
+            width: 20px;
+            margin-top: 95px;
+        }
+        .con{
+            width: 90%;
+            margin: 0 auto;
+            background: #fffdee;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .con_tl{
+            width: 100%;
+            display: flex;
+        }
+
+        .iconReturn img{
+            width: 40px;
+            margin-top: 9px;
+        }
+        .icontx{
+            margin: 0 10px 0 20px;
+        }
+        .icontx img{
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+        }
+        .iconName{
+            line-height: 44px;
+        }
+        .con_cen{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .con_cen_img{
+            margin:30px 0 10px 0;
+        }
+        .con_cen_img img{
+            width:150px;
+            height: 150px;
+            border-radius: 8988px;
+        }
+        .con_cen_pro{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .con_cen_nm{
+            font-size: 12px;
+            color: #a3a2a2;
+        }
+        .con_ft{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .con_ft_list{
+            width: 31%;
+            margin: 10px 1%;
+        }
+        .con_ft_list img{
+            width: 100%;
+            height: 102px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-
-<header>
-    <div class="top-nav">
-        <i class="fa-solid fa-arrow-left"></i>
-        <h1>YUMMERS</h1>
-        <i class="fa-solid fa-gear"></i>
-    </div>
-    <div class="profile">
-        <div class="profile-image">
-            <img src="img/photo/senah.jpg" alt="Profile">
+    <header>
+        <div class="lf">
+            <a href="friends.html"><img src="img/icon/icon-2users.png" alt=""></a>
         </div>
-        <div class="profile-user-settings">
-            <h1 class="profile-user-name">@senahkim</h1>
-            <p class="profile-bio">LA Foodie</p>
+        <div class="tl">
+            yummers
         </div>
-    </div>
-</header>
-
-<main>
-    <div class="gallery">
+        <div class="rg">
+            <img src="img/icon/747376.png" alt="">
+        </div>
+    </header>
+    <div class="con">
+        <div class="con_tl">
+            <div class="iconReturn">
+                <img src="img/icon/icon-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="con_cen">
+            <div class="con_cen_img">
+                <img src="img/photo/senah.jpg" alt="">
+            </div>
+            <div class="con_cen_pro">
+                @senahkim
+            </div>
+            <div class="con_cen_nm">
+                LA foodie
+            </div>
+        </div>
+        <div class="con_ft">
+            <div class="con_ft_list">
+                <img src="img/food/food2.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/food3.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/food4.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/food5.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/food6.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/food7.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/food8.jpg" alt="">
+            </div>
+            <div class="con_ft_list">
+                <img src="img/food/yummers.jpeg" alt="">
+            </div>
+        </div>
      
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/yummers.jpeg" class="gallery-image" alt="">
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food2.jpg" class="gallery-image" alt="">
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&h=500&fit=crop" class="gallery-image" alt="">
-
-            <div class="gallery-item-type">
-
-                <span class="visually-hidden">Gallery</span><i class="fas fa-clone" aria-hidden="true"></i>
-
-            </div>   
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food3.jpg" class="gallery-image" alt="">
-
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food4.jpg" class="gallery-image" alt="">
-
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food6.jpg" class="gallery-image" alt="">
-
-            <div class="gallery-item-info">
-
-                <!--<ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 94</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 3</li>
-                </ul>-->
-
-            </div>
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food5.jpg" class="gallery-image" alt="">
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food7.jpg" class="gallery-image" alt="">
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/food8.jpg" class="gallery-image" alt="">
-
-
-            </div>
-
-        </div>
-
-        <div class="gallery-item" tabindex="0">
-
-            <img src="img/food/yummers.jpeg" class="gallery-image" alt="">
-
-            <div class="gallery-item-info">
-
-                <!--<ul>
-                    <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 34</li>
-                    <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 1</li>
-                </ul>-->
-
-            </div>
-
-        </div>
-
+      
     </div>
-</main>
-
+ 
 </body>
 </html>
