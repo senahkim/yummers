@@ -1,5 +1,5 @@
 body {
-  background-color: #fff6a3;
+  background-color: #fffacd;
   display: flex; /* Flexbox to center children */
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
@@ -64,27 +64,32 @@ header {
 
 /* BUTTON */
 .uploadbtn {
-  width: 50px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fffacd;
+  border: none;
+  color: black;
+  width: 90px;
+  height: 35px;
+  border-radius: 16px;
 }
 
 /* ICONS */
 
 .gear-icon {
-  display: inline-block;
   position: fixed;
-  padding-bottom: 75px;
-  width: 50px;
-  height: 50px;
-  margin-left: 40%;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 .user-icon {
-  display: inline-block;
   position: fixed;
-  padding-bottom: 75px;
-  width: 50px;
-  height: 50px;
-  margin-right: 90%;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
 }
 
 /* CAPTIONS */
