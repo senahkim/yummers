@@ -29,18 +29,17 @@ header {
   }
 }
 
-/* IMAGE */
+/* IMAGE & CAPTINS */
 
 .uploadimage {
   border-radius: 16px;
   background-color: #fffdee;
   display: flex;
-  margin-top: 21px;
+  margin-top: 31px;
   flex-direction: column;
   padding: 17px 24px;
   width: 90%;
   margin-bottom: 90px;
-  font-family: "Roboto";
 
   img {
     width: 300px;
@@ -49,7 +48,26 @@ header {
     align-items: center;
     margin-left: 10px;
   }
+
+  .this-is-yummers {
+    font-family: "Roboto";
+    text-align: center;
+    margin-top: 30px;
+  }
 }
+
+.add-location {
+  color: gray;
+  margin-top: -3px;
+  text-align: center;
+}
+
+/* BUTTON */
+.uploadbtn {
+  width: 50px;
+}
+
+/* ICONS */
 
 .gear-icon {
   display: inline-block;
