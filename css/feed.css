@@ -4,6 +4,7 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 61px 9px 0;
+  
 }
 .div-2 {
   display: flex;
@@ -17,7 +18,10 @@
 .img {
   object-fit: auto;
   object-position: center;
-  width: 41px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 20px;
 }
 
 .div-3 {
@@ -62,6 +66,8 @@
 .div-6 {
   font-family: Roboto, sans-serif;
   margin: auto 0;
+  font-weight: 700;
+  font-size: 15pt;
 }
 .img-4 {
   aspect-ratio: 0.96;
@@ -126,6 +132,8 @@
 .div-12 {
   font-family: Roboto, sans-serif;
   margin: auto 0;
+  font-weight: 700;
+  font-size: 15pt;
 }
 .img-8 {
   object-fit: auto;
@@ -133,4 +141,8 @@
   width: 100%;
   border-radius: 8px;
   margin-top: 15px;
+}
+
+.div-13 {
+  border-radius: 50%;
 }
