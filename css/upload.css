@@ -74,6 +74,18 @@ header {
   border-radius: 16px;
 }
 
+#homelink a {
+  text-decoration: none;
+  color: black;
+}
+#yummers-link a {
+  text-decoration: none;
+  color: black;
+}
+#yummers-link a:visited {
+  text-decoration: none;
+  color: black;
+}
 /* ICONS */
 
 .gear-icon {
