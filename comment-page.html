@@ -71,7 +71,6 @@
             border-radius: 999px;
         }
         .iconName{
-            font-weight:bold;
             line-height: 44px;
         }
         .con_cen{
@@ -142,25 +141,19 @@
         .ipt{
             margin-top: 80px;
             width: 100%;
+            display: flex;
         }
         .ipt input{
-            width: 72%;
+            width: 100%;
             height: 30px;
-            border-color:#a3a2a2 ;
+            border-color:#a3a3a2 ;
             outline: none;
-            border-radius: 10px;
+            border-radius: 5px;
             border-top-color: #a3a2a2;
             border-left-color: #a3a2a2;
         }
-        .con_button{
-            padding: 1.2% 1.2%;
-            text-align: center;
-            height: 30px;
-            font-weight: bold;
-            align-items: right;
-            border-radius: 10px; 
-            border-style:none;
-            background-color: rgb(240, 224, 157);
+        button{
+            width: 80px;
         }
     </style>
 </head>
@@ -173,13 +166,13 @@
             yummers
         </div>
         <div class="rg">
-            <a href="profile-page.html"><img src="img/photo/senah.jpg" alt=""></a>
+            <a href="profile-page.html"><img src="img/photo/p4.jpg" alt=""></a>
         </div>
     </header>
     <div class="con">
         <div class="con_tl">
-            <div class="iconReturn">
-                <img src="img/icon/icon-arrow.png" alt="">
+            <div class="iconReturn" onclick="history.back()">
+                <img src="img/icon/icon-arrow.png" alt="Go back to the last page">
             </div>
             <div class="icontx">
                 <a href="profile-page.html"><img src="img/photo/senah.jpg" alt=""></a>
@@ -220,15 +213,31 @@
                     OMG that looks so good
                 </div>
             </div>
-            
         </div>
         <div class="ipt">
             <input type="text" placeholder="Add Comment">
-            <a><button class="con_button">comment</button></a>
+            <button>comment</button>
         </div>
     </div>
-    <!-- <div>
-        <img src="1.jpg" alt="">
-    </div> -->
+
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const addButton = document.querySelector(".ipt button");
+
+    addButton.addEventListener("click", function() {
+        const inputField = document.querySelector(".ipt input");
+        const inputValue = inputField.value.trim();
+
+        if (inputValue !== "") {
+            const messageContainer = document.querySelector(".msg_tx");
+            const newMessage = document.createElement("div");
+            newMessage.textContent = inputValue;
+            messageContainer.appendChild(newMessage);
+            inputField.value = ""; // Clear the input field after adding the comment
+        }
+    });
+});
+
+</script>
 </html>

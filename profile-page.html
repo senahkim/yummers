@@ -62,7 +62,13 @@
         .iconReturn img{
             width: 40px;
             margin-top: 9px;
+            transition: filter 0.3s; 
         }
+        /*
+        .iconReturn:hover img {
+            filter: sepia(1) hue-rotate(20deg) brightness(90%); 
+        }
+        */
         .icontx{
             margin: 0 10px 0 20px;
         }
@@ -125,8 +131,8 @@
     </header>
     <div class="con">
         <div class="con_tl">
-            <div class="iconReturn">
-                <img src="img/icon/icon-arrow.png" alt="">
+            <div class="iconReturn" onclick="history.back()">
+                <img src="img/icon/icon-arrow.png" alt="Go back to previous page">
             </div>
         </div>
         <div class="con_cen">
