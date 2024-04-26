@@ -28,6 +28,7 @@
   flex-basis: auto;
   margin: auto 0;
   text-align: center;
+  cursor: pointer;
 }
 
 .img-2 {

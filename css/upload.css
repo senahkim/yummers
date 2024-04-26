@@ -27,6 +27,7 @@ header {
     font-family: "Lemon", sans-serif;
     color: black;
     margin-bottom: 50px;
+    cursor: pointer;
   }
 }
 
