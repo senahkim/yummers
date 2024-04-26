@@ -142,14 +142,13 @@
   margin-top: 15px;
 }
 
-<<<<<<< Updated upstream
 body,
 html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
-=======
+
 #camera {
   background: #fffacd;
   height: 10px;
@@ -166,4 +165,4 @@ html {
   font-family: "Cinzel";
   -webkit-text-stroke-width: 0.01px;
 }
->>>>>>> Stashed changes
+
