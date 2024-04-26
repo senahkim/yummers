@@ -2,7 +2,7 @@
   background-color: #fffacd;
   width: 100%;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 0;
   font-weight: 700;
   padding: 67px 16px;
 }
@@ -28,7 +28,7 @@
   flex-grow: 1;
   flex-basis: auto;
   margin: auto 0;
-  text-align:center;
+  text-align: center;
 }
 
 .img-2 {
@@ -55,7 +55,7 @@
 .div-4 {
   margin: 53px 0 0 13px;
   font: 24px Roboto, sans-serif;
-  margin-left:40px;
+  margin-left: 40px;
   font-weight: 700;
 }
 .div-5 {
@@ -65,7 +65,7 @@
   border-width: 2px;
   align-self: center;
   margin-top: 42px;
-  margin-left:70px;
+  margin-left: 70px;
   width: 308px;
   max-width: 100%;
   align-items: center;
@@ -186,4 +186,28 @@
 .div-17 {
   font-family: Roboto, sans-serif;
   margin: auto 0;
+}
+
+/* CAMERA AREA */
+#loginbanner {
+  background: #03070d;
+  height: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  cursor: default;
+  text-align: center;
+  padding-bottom: 35px;
+  font-family: "Cinzel";
+  -webkit-text-stroke-width: 0.01px;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
