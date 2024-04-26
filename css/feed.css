@@ -4,7 +4,6 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 61px 9px 0;
-  
 }
 .div-2 {
   display: flex;
@@ -28,7 +27,7 @@
   flex-grow: 1;
   flex-basis: auto;
   margin: auto 0;
-  text-align:center;
+  text-align: center;
 }
 
 .img-2 {
@@ -140,4 +139,11 @@
   width: 100%;
   border-radius: 8px;
   margin-top: 15px;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
