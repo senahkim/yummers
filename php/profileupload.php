@@ -1,10 +1,10 @@
-<script>
 
 <?php
-    $images = glob("img/food/"."*.jpg");
-    $img_paths =implode("','", $images);
-    echo "let images = ['".$img_paths."'];";
+    $images = glob("../img/food/"."*.jpg");
+    foreach ($images as $img){
+        echo "<div><img src= '$img'></div>";
+    }
 ?>
 
-</script>
+
 
