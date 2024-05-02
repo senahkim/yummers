@@ -1,89 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="STYLESHEET" type="text/css" href="css/friends.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/masterdoc.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="camerabanner">
-            <img src="img/icon/camera.png" class="camera" onclick="toggleForm()" />
-            <div id="camera-form" class="hidden">
-                <div class="div-13">
-                    <form action="" method="post" enctype="multipart/form-data" id="camera-page" class="camera">
-                        <label for="file-upload" id="upload-button">Upload Images</label>
-                        <input type="file" name="uploadedfile" id="file-upload" accept="image/*" capture="camera" />
-                    </form>
-                </div>
-            </div>
+      <div id="camerabanner">
+        <img src="img/icon/camera.png" class="camera" onclick="toggleForm()" />
+        <div id="camera-form" class="hidden">
+          <div class="div-13">
+            <form
+              action=""
+              method="post"
+              enctype="multipart/form-data"
+              id="camera-page"
+              class="camera"
+            >
+              <label for="file-upload" id="upload-button">Upload Images</label>
+              <input
+                type="file"
+                name="uploadedfile"
+                id="file-upload"
+                accept="image/*"
+                capture="camera"
+              />
+            </form>
+          </div>
         </div>
+      </div>
     </header>
 
     <div class="div">
-        <div class="div-2">
-            <img loading="lazy" src="img/icon/icon-2users.png" class="img" />
-            <div class="div-3">YUMMERS</div>
-            <a href="profile-page.html">
-                <img src="../img/photo/senah.jpg" alt="" class="img-2"/>
-            </a>
-        </div>
+      <div class="div-2">
+        <img loading="lazy" src="img/icon/icon-2users.png" class="img" />
+        <div class="div-3">YUMMERS</div>
+        <a href="profile-page.html">
+          <img src="../img/photo/senah.jpg" alt="" class="img-2" />
+        </a>
+      </div>
 
-        <div class="div-4">My Friends</div>
-        <div class="div-5">
-            Search: <input type="text" id="searchInput" />
-            <button class="searchbtn">Search</button>
-        </div>
-        <div id="profile-container"></div> <!-- Container to render the search results -->
+      <div class="div-4">My Friends</div>
+      <div class="div-5">
+        Search: <input type="text" id="searchInput" />
+        <button class="searchbtn">Search</button>
+      </div>
+      <div id="profile-container"></div>
+      <!-- Container to render the search results -->
     </div>
 
     <script>
-        const list = [
-            { img: 'img/photo/profile-gracee.lee.png', name: '@gracee.lee' },
-            { img: 'img/photo/profile-enochzhuu.jpg', name: '@enochzhuu' },
-            { img: 'img/photo/p3.jpg', name: '@gardengal' },
-            { img: 'img/photo/p4.jpg', name: '@kathrynyoo' },
-            { img: 'img/photo/p5.jpg', name: '@julieeyang' },
-            { img: 'img/photo/p6.jpg', name: '@seriseri' }
-        ];
+      const list = [
+        { img: "img/photo/profile-gracee.lee.png", name: "@gracee.lee" },
+        { img: "img/photo/profile-enochzhuu.jpg", name: "@enochzhuu" },
+        { img: "img/photo/p3.jpg", name: "@gardengal" },
+        { img: "img/photo/p4.jpg", name: "@kathrynyoo" },
+        { img: "img/photo/p5.jpg", name: "@julieeyang" },
+        { img: "img/photo/p6.jpg", name: "@seriseri" },
+      ];
 
-        window.onload = function () {
-            rendering(list);
-        };
+      window.onload = function () {
+        rendering(list);
+      };
 
-        function rendering(val) {
-            const container = document.getElementById('profile-container');
-            container.innerHTML = '';
-            val.forEach(item => {
-                const outerDiv = document.createElement('div');
-                outerDiv.className = 'div-6';
+      function rendering(val) {
+        const container = document.getElementById("profile-container");
+        container.innerHTML = "";
+        val.forEach((item) => {
+          const outerDiv = document.createElement("div");
+          outerDiv.className = "div-6";
 
-                const imgElement = document.createElement('img');
-                imgElement.setAttribute('loading', 'lazy');
-                imgElement.src = item.img.trim();  
-                imgElement.className = 'img-4';
-                outerDiv.appendChild(imgElement);
+          const imgElement = document.createElement("img");
+          imgElement.setAttribute("loading", "lazy");
+          imgElement.src = item.img.trim();
+          imgElement.className = "img-4";
+          outerDiv.appendChild(imgElement);
 
-                const nameDiv = document.createElement('div');
-                nameDiv.className = 'div-7';
-                nameDiv.textContent = item.name;
-                outerDiv.appendChild(nameDiv);
+          const nameDiv = document.createElement("div");
+          nameDiv.className = "div-7";
+          nameDiv.textContent = item.name;
+          outerDiv.appendChild(nameDiv);
 
-                container.appendChild(outerDiv);
-            });
-        }
-
-        const input = document.getElementById('searchInput');
-        const button = document.querySelector('.searchbtn');
-
-        button.addEventListener('click', function() {
-            const inputValue = input.value.toLowerCase();
-            const filteredList = list.filter(item => item.name.toLowerCase().includes(inputValue));
-            rendering(filteredList);
+          container.appendChild(outerDiv);
         });
+      }
+
+      const input = document.getElementById("searchInput");
+      const button = document.querySelector(".searchbtn");
+
+      button.addEventListener("click", function () {
+        const inputValue = input.value.toLowerCase();
+        const filteredList = list.filter((item) =>
+          item.name.toLowerCase().includes(inputValue)
+        );
+        rendering(filteredList);
+      });
     </script>
-</body>
+  </body>
 </html>

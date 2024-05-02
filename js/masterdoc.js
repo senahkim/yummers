@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Define a variable to track the button visibility
 var isButtonVisible = true;
+var uploadTimeout; // Variable to store the timeout ID
 
 function toggleForm() {
   var form = document.getElementById("camera-form");
@@ -18,6 +18,13 @@ function toggleForm() {
   if (form.classList.contains("hidden")) {
     form.classList.remove("hidden");
     defaultUploadButton.style.display = "none"; // Hide the default upload button
+
+    // Reset the timeout when the form is toggled
+    clearTimeout(uploadTimeout);
+    // Set a new timeout to hide the upload button after 15 seconds
+    uploadTimeout = setTimeout(function () {
+      uploadButton.style.display = "none"; // Hide the upload button
+    }, 12000); // 15 seconds in milliseconds
   } else {
     form.classList.add("hidden");
     defaultUploadButton.style.display = "block"; // Show the default upload button
@@ -30,6 +37,9 @@ function toggleForm() {
       uploadButton.style.display = "inline-block"; // Show the pink rectangle button
       isButtonVisible = true; // Update the visibility state
     }
+
+    // Clear the timeout when the form is hidden
+    clearTimeout(uploadTimeout);
   }
 
   // Update button content and trigger animation
