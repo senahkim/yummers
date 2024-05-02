@@ -11,20 +11,31 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/feed.js"></script>
     <script src="../js/login.js"></script>
+    <script src="js/masterdoc.js"></script>
   </head>
 
   <header>
-    <div id="camera">
-      <div class="div-13">
-        <form
-          action="../uploadpage.php"
-          method="post"
-          enctype="multipart/form-data"
-          id="camera-page"
-          class="camera"
-        >
-          <input type="file" name="uploadedfile" accept="image/*" />
-        </form>
+    <div id="camerabanner">
+      <img src="img/icon/camera-png" class="camera" onclick="toggleForm()" />
+      <div id="camera-form" class="hidden">
+        <div class="div-13">
+          <form
+            action=""
+            method="post"
+            enctype="multipart/form-data"
+            id="camera-page"
+            class="camera"
+          >
+            <label for="file-upload" id="upload-button">Upload Images</label>
+            <input
+              type="file"
+              name="uploadedfile"
+              id="file-upload"
+              accept="image/*"
+              capture="camera"
+            />
+          </form>
+        </div>
       </div>
     </div>
   </header>

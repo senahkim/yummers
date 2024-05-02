@@ -160,9 +160,71 @@ html {
   color: white;
   cursor: default;
   text-align: center;
-  padding-top:15px;
+  padding-top: 15px;
   padding-bottom: 35px;
   font-family: "Cinzel";
   -webkit-text-stroke-width: 0.01px;
 }
 
+#camerabanner {
+  background: #e8e2a9;
+  height: 10px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: white;
+  cursor: default;
+  text-align: center;
+  size: 12px;
+  padding-bottom: 45px;
+  font-family: "Cinzel";
+  -webkit-text-stroke-width: 0.01px;
+  border-top: 5px solid pink;
+}
+
+.camera {
+  position: absolute;
+  top: -30%;
+  left: 41%;
+  width: 74px;
+  height: 65px;
+  padding-top: 3px;
+  size: 50px;
+
+  border-radius: 50%;
+  padding-bottom: 45px;
+}
+
+.hidden {
+  display: none;
+}
+
+#upload-button {
+  display: inline-block;
+  width: 80px; /* Width of the circle */
+  height: 50px; /* Height of the circle */
+  border: 1px dotted green;
+  border-radius: 10px; /* Make it a circle */
+  background-color: pink;
+  cursor: pointer;
+  position: relative;
+  animation: bounce 0.5s ease forwards; /* Apply the bounce animation */
+  transform: translateY(-10px);
+  text-align: center;
+  line-height: 50px;
+  right: 3px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-90px); /* Bounce up */
+  }
+  100% {
+    transform: translateY(-90px); /* Return to original position */
+  }
+}
