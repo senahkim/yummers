@@ -182,7 +182,7 @@ html {
   padding-bottom: 45px;
   font-family: "Cinzel";
   -webkit-text-stroke-width: 0.01px;
-  border-top: 5px solid pink;
+  border-top: 5px solid #d6cf90;
 }
 
 .camera {
