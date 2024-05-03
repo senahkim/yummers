@@ -41,12 +41,12 @@
   margin-right: 40px;
 }
 .div-4 {
-  border-radius: 16px;
   background-color: #fffdee;
-  display: flex;
   margin-top: 21px;
   flex-direction: column;
-  padding: 17px 24px;
+  padding: 17px 20px;
+  margin-right: 20px; 
+   border-radius: 16px;
 }
 .div-5 {
   align-self: start;
@@ -71,10 +71,10 @@
   font-size: 15pt;
 }
 .img-4 {
-  aspect-ratio: 0.96;
   object-fit: auto;
   object-position: center;
   width: 100%;
+  border-radius: 8px;
   margin-top: 15px;
 }
 .div-7 {
@@ -116,6 +116,7 @@
   margin-top: 21px;
   flex-direction: column;
   padding: 17px 24px;
+  margin-right: 20px;
 }
 .div-11 {
   align-self: start;
