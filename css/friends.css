@@ -2,9 +2,8 @@
   background-color: #fffacd;
   width: 100%;
   flex-direction: column;
-  margin: 0;
-  font-weight: 700;
-  padding: 67px 16px;
+  margin: 0 auto;
+  padding: 61px 9px 0;
 }
 .div-2 {
   display: flex;
@@ -14,18 +13,17 @@
   color: #000;
   font-weight: 400;
   white-space: nowrap;
-  border-radius: 50%;
+}
+.img {
+  object-fit: auto;
+  object-position: center;
+  width: 81px;
+  margin: auto 0;
 }
 
-.img {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 58px;
-  height: 40px;
-}
 .div-3 {
   font-family: Lemon, sans-serif;
+  align-self: stretch;
   flex-grow: 1;
   flex-basis: auto;
   margin: auto 0;
@@ -34,14 +32,13 @@
 }
 
 .img-2 {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-
+  object-fit: auto;
+  object-position: center;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-left: 20px;
+  margin-right: 40px;
 }
 
 .img-3 {
