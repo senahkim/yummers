@@ -1,5 +1,3 @@
-<?php
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
       rel="stylesheet"
     />
-    <script src="js/masterdoc.js"></script>
+    <script src="js/masterdoc.js"></script>c
   </head>
 </html>
 
@@ -35,5 +33,3 @@
 
 </body>
 </html>
-
-?>
