@@ -5,6 +5,49 @@
     box-sizing: border-box;
 }
 
+.div {
+    background-color: #fffacd;
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 61px 9px 0;
+  }
+  .div-2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #000;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .img {
+    object-fit: auto;
+    object-position: center;
+    width: 81px;
+    margin: auto 0;
+  }
+  
+  .div-3 {
+    font-family: Lemon, sans-serif;
+    align-self: stretch;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .img-2 {
+    object-fit: auto;
+    object-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  
 .app-header {
     font-family: Lemon, sans-serif;
 }
