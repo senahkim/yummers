@@ -19,12 +19,12 @@ function toggleForm() {
   if (form.classList.contains("hidden")) {
     form.classList.remove("hidden");
     defaultUploadButton.style.display = "none"; // Hide the default upload button
+    uploadButton.style.display = "none";
 
     // Reset the timeout when the form is toggled
     clearTimeout(uploadTimeout);
     // Set a new timeout to hide the upload button after 15 seconds
     uploadTimeout = setTimeout(function () {
-      uploadButton.style.display = "none"; // Hide the upload button
       cameraClickable = true; // Allow camera icon to be clickable again
     }, 15000); // 15 seconds in milliseconds
 
@@ -33,6 +33,7 @@ function toggleForm() {
   } else {
     form.classList.add("hidden");
     defaultUploadButton.style.display = "block"; // Show the default upload button
+    uploadButton.style.display = "inline-block";
 
     // Toggle the pink rectangle button visibility based on the variable
     if (isButtonVisible) {
@@ -65,3 +66,33 @@ function cameraIconClicked() {
     console.log("Camera icon is not clickable yet.");
   }
 }
+
+function toggleForm() {
+  var x = document.getElementById("camera-form");
+  if (x.classList.contains("hidden")) {
+    x.classList.remove("hidden");
+  } else {
+    x.classList.add("hidden");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Attach event listener to file input element
+  document
+    .getElementById("file-upload")
+    .addEventListener("change", function (event) {
+      var uploadedImage = event.target.files[0];
+      var reader = new FileReader();
+      reader.onload = function (event) {
+        var uploadedImageElement = document.createElement("img");
+        uploadedImageElement.src = event.target.result;
+        uploadedImageElement.alt = "Uploaded Image";
+        var uploadedImageContainer = document.getElementById(
+          "uploadedImageContainer"
+        );
+        uploadedImageContainer.innerHTML = ""; // Clear previous content if any
+        uploadedImageContainer.appendChild(uploadedImageElement);
+      };
+      reader.readAsDataURL(uploadedImage);
+    });
+});

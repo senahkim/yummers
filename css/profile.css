@@ -120,3 +120,14 @@
     transform: translateY(-90px); /* Return to original position */
   }
 }
+
+/* Apply the same styling as con_ft_list to the uploaded image container */
+#uploadedImageContainer {
+  width: 31%;
+  margin: 10px 1%;
+}
+#uploadedImageContainer img {
+  width: 100%;
+  border-radius: 10px;
+  height: 150px;
+}
